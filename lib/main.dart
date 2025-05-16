@@ -5,6 +5,6 @@ import 'package:ecommerce/pages/likes.dart';
 import 'package:ecommerce/pages/search.dart';
 void main() {
   runApp(MaterialApp(
-    home: Home(),
+    home:Profile(),
   ));
 }
