@@ -1,0 +1,18 @@
+class Product{
+  final String id;
+  final String name;
+  final double price;
+  final String image;
+  final bool isFav;
+  final List<String> categories;
+  final String type;
+  Product({
+    required this.id,
+    required this.name,
+    required this.price,
+    required this.image,
+    required this.isFav,
+    required this.categories,
+    required this.type,
+});
+}
