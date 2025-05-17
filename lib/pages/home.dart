@@ -1,5 +1,9 @@
 
-import 'package:ecommerce/components/shop.dart';
+import 'package:ecommerce/components/homeComp/memorabilia.dart';
+import 'package:ecommerce/components/homeComp/menad.dart';
+import 'package:ecommerce/components/homeComp/shop.dart';
+import 'package:ecommerce/components/homeComp/trainingad.dart';
+import 'package:ecommerce/components/homeComp/womenad.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce/components/navbar.dart';
 class Home extends StatefulWidget {
@@ -73,96 +77,16 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   SizedBox(height: 20,),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        SizedBox(width: 10,),
-                        Column(
-                          children: [
-                            CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/laliga.webp'),),
-                            SizedBox(height:3 ,),
-                            Text('LIGA 24/25',
-                            style:TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontFamily: 'RobotoCondensed',
-                              fontSize: 11,
-                            ))
-                          ],
-                        ),
-                        SizedBox(width: 25),
-                        Column(
-                          children: [
-                            CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/ucl.png')),
-                            SizedBox(height:3 ,),
-                            Text('UCL 24/25',
-                                style:TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  fontFamily: 'RobotoCondensed',
-                                  fontSize: 11,
-                                ))
-                          ],
-                        ),
-                        SizedBox(width: 25),
-                        Column(
-                          children: [
-                            CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/copa.png')),
-                            SizedBox(height:3 ,),
-                            Text('COPA 24/25',
-                                style:TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  fontFamily: 'RobotoCondensed',
-                                  fontSize: 11,
-                                ))
-                          ],
-                        ),
-                        SizedBox(width: 25),
-                        Column(
-                          children: [
-                            CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/laliga.webp')),
-                            SizedBox(height:3 ,),
-                            Text('LIGA 23/24',
-                                style:TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  fontFamily: 'RobotoCondensed',
-                                  fontSize: 11,
-                                ))
-                          ],
-                        ),
-                        SizedBox(width: 25),
-                        Column(
-                          children: [
-                            CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/ucl.png')),
-                            SizedBox(height:3 ,),
-                            Text('UCL 23/24',
-                                style:TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  fontFamily: 'RobotoCondensed',
-                                  fontSize: 11,
-                                ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(width: 25),
-                        Column(
-                          children: [
-                            CircleAvatar(radius: 30,backgroundImage: AssetImage('assets/copa.png')),
-                            SizedBox(height:3 ,),
-                            Text('COPA 23/24',
-                              style:TextStyle(
-                                fontWeight: FontWeight.w500,
-                                fontFamily: 'RobotoCondensed',
-                                fontSize: 11,
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(width: 10,),
-                      ],
-                    ),
-                  ),
+                  Memorabilia(),
                   SizedBox(height: 30,),
                   Shop(),
+                  SizedBox(height: 30,),
+                  Menad(),
+                  SizedBox(height: 3,),
+                  Trainingad(),
+                  SizedBox(height: 3,),
+                  Womenad(),
+                  SizedBox(height: 3,),
                 ],
               ),
             ),

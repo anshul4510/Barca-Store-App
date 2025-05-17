@@ -2,6 +2,8 @@ import 'package:ecommerce/components/productTile.dart';
 import 'package:ecommerce/products/sample_product.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce/products/product.dart';
+
+import 'navbar.dart';
 class Training extends StatefulWidget {
   const Training({super.key});
 
@@ -15,6 +17,26 @@ class _TrainingState extends State<Training> {
   Widget build(BuildContext context) {
     final TrainingProducts = products.where((p) => p.type.toLowerCase() == 'training').toList();
     return Scaffold(
+      appBar: AppBar(
+        title: Container(
+          alignment: Alignment.centerLeft,
+          decoration: BoxDecoration(
+            color: Colors.purple[800],
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 3,horizontal: 25),
+            child: Text('TRAINING KITS',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 16,
+                backgroundColor: Colors.purple[800],
+                color: Colors.white,
+                fontWeight: FontWeight.w500,
+              ),),
+          ),
+        ),
+      ),
       body: Column(
         children: [
           Expanded(
@@ -29,24 +51,7 @@ class _TrainingState extends State<Training> {
                     // )),
                     child: Column(
                       children: [
-                        Container(
-                          alignment: Alignment.centerLeft,
-                          decoration: BoxDecoration(
-                            color: Colors.purple[800],
-                            borderRadius: BorderRadius.all(Radius.circular(20)),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 3,horizontal: 25),
-                            child: Text('TRAINING KITS',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 16,
-                                backgroundColor: Colors.purple[800],
-                                color: Colors.white,
-                                fontWeight: FontWeight.w500,
-                              ),),
-                          ),
-                        ),
+
                         TrainingProducts.isEmpty
                             ? const Padding(
                           padding: EdgeInsets.all(20.0),
@@ -80,6 +85,7 @@ class _TrainingState extends State<Training> {
           ),
         ],
       ),
+      bottomNavigationBar: Navbar(),
     );
   }
 }

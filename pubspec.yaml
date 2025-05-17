@@ -81,6 +81,18 @@ flutter:
         - asset: fonts/Ubuntu-Bold.ttf
           weight: 500
 
+    - family: RobotoCondensed
+      fonts:
+        - asset: fonts/RobotoCondensed-Regular.ttf
+        - asset: fonts/RobotoCondensed-Bold.ttf
+          weight: 500
+
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat-Regular.ttf
+        - asset: fonts/Montserrat-Bold.ttf
+          weight: 500
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
