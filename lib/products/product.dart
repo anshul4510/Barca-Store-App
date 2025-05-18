@@ -4,6 +4,7 @@ class Product{
   final double price;
   final String image;
    bool isFav;
+   bool inCart;
   final List<String> categories;
   final String type;
   Product({
@@ -14,5 +15,6 @@ class Product{
     required this.isFav,
     required this.categories,
     required this.type,
+    required this.inCart,
 });
 }

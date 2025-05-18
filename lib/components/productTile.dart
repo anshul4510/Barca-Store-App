@@ -78,11 +78,11 @@ class Product_tile extends StatelessWidget {
                  side: const BorderSide(color: Colors.black),
                  padding: const EdgeInsets.symmetric(vertical: 8),
                ),
-               onPressed: (){},
-               child: const Row(
+               onPressed: onAddToCart,
+               child:Row(
                  mainAxisAlignment: MainAxisAlignment.center,
                  children: [
-                   Text(
+                   Text(prod.inCart?'Remove Item':
                      'Add to Cart',
                      style: TextStyle(
                        fontWeight: FontWeight.w500,
@@ -91,7 +91,7 @@ class Product_tile extends StatelessWidget {
                      ),
                    ),
                    SizedBox(width: 8),
-                   Icon(Icons.shopping_cart, size: 18,color: Colors.black,),
+                   Icon(prod.inCart?Icons.delete:Icons.shopping_cart, size: 18,color: Colors.black,),
                  ],
                ),
              ),

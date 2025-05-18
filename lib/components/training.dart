@@ -68,6 +68,11 @@ class _TrainingState extends State<Training> {
                           itemCount: TrainingProducts.length,
                           itemBuilder: (context, index) => Product_tile(
                               prod:TrainingProducts[index],
+                              onAddToCart: (){
+                                setState(() {
+                                  TrainingProducts[index].inCart=!TrainingProducts[index].inCart;
+                                });
+                              },
                               onFavoritePressed:(){
                                 setState(() {
                                   TrainingProducts[index].isFav =

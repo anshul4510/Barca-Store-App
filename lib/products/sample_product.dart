@@ -8,6 +8,7 @@ final List<Product> sampleProducts=[
     isFav:false,
     categories: ['women','socks'],
     type:'women',
+    inCart: false,
   ),
   Product(
       id:'2',
@@ -17,6 +18,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['women','shorts'],
     type:'women',
+    inCart: false,
   ),
   Product(
       id:'3',
@@ -26,6 +28,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['women','jersey','home'],
     type:'women',
+    inCart: true,
   ),
   Product(
       id:'5',
@@ -35,6 +38,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','third','shorts'],
     type:'men',
+    inCart: false,
   ),
   Product(
       id:'6',
@@ -44,6 +48,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','third','jersey','top'],
     type:'men',
+    inCart: false,
   ),
   Product(
       id:'7',
@@ -53,6 +58,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','home','socks'],
     type:'men',
+    inCart: false,
   ),
   Product(
       id:'8',
@@ -62,6 +68,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','home','shorts'],
     type:'men',
+    inCart: false,
   ),
   Product(
       id:'10',
@@ -71,6 +78,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','home','jersey','top'],
     type:'men',
+    inCart: true,
   ),
   Product(
       id:'11',
@@ -80,6 +88,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','home','jersey','goalkeeper'],
     type:'men',
+    inCart: false,
   ),
   Product(
       id:'12',
@@ -89,6 +98,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','away','shorts'],
     type:'men',
+    inCart: false,
   ),
   Product(
       id:'13',
@@ -98,6 +108,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','away','jersey','top'],
     type:'men',
+    inCart: false,
   ),
   Product(
       id:'15',
@@ -107,6 +118,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','training','sweatshirt','home'],
     type:'training',
+    inCart: false,
   ),
   Product(
       id:'16',
@@ -116,6 +128,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','training','pants','third'],
     type:'training',
+    inCart: false,
   ),
   Product(
       id:'17',
@@ -125,6 +138,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','training','pants','home'],
     type:'training',
+    inCart: true,
   ),
   Product(
       id:'18',
@@ -134,5 +148,6 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','training','sweatshirt','third','top'],
     type:'training',
+    inCart: false,
   ),
 ];

@@ -28,6 +28,11 @@ class _ToppicksState extends State<Toppicks> {
             margin: EdgeInsets.symmetric(horizontal: 8),
             child: Product_tile(
               prod: topProducts[index],
+              onAddToCart: (){
+                setState(() {
+                  topProducts[index].inCart = !topProducts[index].inCart;
+                });
+              },
               onFavoritePressed: () {
                 setState(() {
                   topProducts[index].isFav = !topProducts[index].isFav;

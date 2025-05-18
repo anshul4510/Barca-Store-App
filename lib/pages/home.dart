@@ -6,6 +6,8 @@ import 'package:ecommerce/components/homeComp/womenad.dart';
 import 'package:ecommerce/pages/likes.dart';
 import 'package:ecommerce/pages/profile.dart';
 import 'package:ecommerce/pages/search.dart';
+import 'package:ecommerce/products/product.dart';
+import 'package:ecommerce/products/sample_product.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce/components/navbar.dart';
 
@@ -19,7 +21,7 @@ class Homenav extends StatefulWidget {
 class _HomenavState extends State<Homenav> {
   int _selectedIndex = 0;
 
-  final List<Widget> _pages = const [
+  final List<Widget> _pages =  [
     Home(),
     Likes(),
     Search(),
@@ -34,7 +36,6 @@ class _HomenavState extends State<Homenav> {
 
   PreferredSizeWidget? get _buildAppBar {
     if (_selectedIndex == 0) {
-      // Only show AppBar on Home page
       return AppBar(
         backgroundColor: Colors.white,
         title: Row(
@@ -59,9 +60,26 @@ class _HomenavState extends State<Homenav> {
                 ),
               ],
             ),
-            const CircleAvatar(
-              radius: 20,
-              backgroundImage: AssetImage("assets/user_icon.jpg"),
+            Row(
+              children: [
+                FloatingActionButton(onPressed:() async{
+                  dynamic result=await Navigator.pushNamed(context,'/cart');},
+                  mini: true,
+                  elevation: 4.0,
+                  tooltip: 'Go to Cart',
+                  backgroundColor: Colors.blue[800],
+                  foregroundColor: Colors.white,
+                  child: Icon(Icons.shopping_cart),
+                  shape: RoundedRectangleBorder(// Custom shape (optional)
+                    borderRadius: BorderRadius.circular(35),
+                  ),
+                ),
+                const SizedBox(width: 7),
+                const CircleAvatar(
+                  radius: 20,
+                  backgroundImage: AssetImage("assets/user_icon.jpg"),
+                ),
+              ],
             ),
           ],
         ),
@@ -83,9 +101,9 @@ class _HomenavState extends State<Homenav> {
   }
 }
 class Home extends StatelessWidget {
-  const Home({super.key});
-
+  final List<Product> products = sampleProducts;
   @override
+  final cartProducts = sampleProducts.where((product) => product.inCart).toList();
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(

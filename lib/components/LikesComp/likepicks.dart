@@ -38,6 +38,11 @@ class _LikepicksState extends State<Likepicks> {
             margin: EdgeInsets.symmetric(horizontal: 8),
             child: Product_tile(
               prod: likedProducts[index],
+              onAddToCart: (){
+                setState(() {
+                  likedProducts[index].inCart = !likedProducts[index].inCart;
+                });
+              },
               onFavoritePressed: () {
                 setState(() {
                   likedProducts[index].isFav = !likedProducts[index].isFav;

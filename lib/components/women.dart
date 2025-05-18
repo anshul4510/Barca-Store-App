@@ -68,6 +68,11 @@ class _WomenState extends State<Women> {
                           itemCount: womensProducts.length,
                           itemBuilder: (context, index) => Product_tile(
                               prod:womensProducts[index],
+                              onAddToCart: (){
+                                setState(() {
+                                  womensProducts[index].inCart=!womensProducts[index].inCart;
+                                });
+                              },
                               onFavoritePressed:(){
                                 setState(() {
                                   womensProducts[index].isFav =
