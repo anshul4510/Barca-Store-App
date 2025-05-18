@@ -42,7 +42,7 @@ final List<Product> sampleProducts=[
       price:1049.99,
       image:'UCL_MEN_THIRD.webp',
       isFav:false,
-      categories: ['men','third','jersey'],
+      categories: ['men','third','jersey','top'],
     type:'men',
   ),
   Product(
@@ -69,7 +69,7 @@ final List<Product> sampleProducts=[
       price:1149.99,
       image:'UCL_MEN_HOME.webp',
       isFav:false,
-      categories: ['men','home','jersey'],
+      categories: ['men','home','jersey','top'],
     type:'men',
   ),
   Product(
@@ -96,7 +96,7 @@ final List<Product> sampleProducts=[
       price:1149.99,
       image:'UCL_MEN_AWAY.webp',
       isFav:false,
-      categories: ['men','away','jersey'],
+      categories: ['men','away','jersey','top'],
     type:'men',
   ),
   Product(
@@ -132,7 +132,7 @@ final List<Product> sampleProducts=[
       price:699.99,
       image:'THIRD_SWEATSHIRT.webp',
       isFav:false,
-      categories: ['men','training','sweatshirt','third'],
+      categories: ['men','training','sweatshirt','third','top'],
     type:'training',
   ),
 ];

@@ -10,6 +10,7 @@ import 'package:ecommerce/pages/likes.dart';
 import 'package:ecommerce/pages/search.dart';
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     initialRoute: '/',
     routes: {
       '/': (context) => Homenav(),
