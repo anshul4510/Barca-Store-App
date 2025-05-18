@@ -85,7 +85,6 @@ class _MenState extends State<Men> {
           ),
         ],
       ),
-      bottomNavigationBar: Navbar(),
     );
   }
 }

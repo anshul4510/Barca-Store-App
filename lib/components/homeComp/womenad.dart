@@ -30,7 +30,8 @@ class Womenad extends StatelessWidget {
                     fontSize: 20,
                   ),),
                 SizedBox(height:15),
-                OutlinedButton(onPressed: (){},
+                OutlinedButton(onPressed:  () async{
+                  dynamic result=await Navigator.pushNamed(context,'/women');},
                     style: OutlinedButton.styleFrom(
                       backgroundColor:Colors.pink[800],
                     ),

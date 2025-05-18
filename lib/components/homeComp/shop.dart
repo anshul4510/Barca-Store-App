@@ -25,7 +25,7 @@ class Shop extends StatelessWidget {
                         SizedBox(width: 20,),
                         Column(
                           children: [
-                            Text('BARCA ONE',
+                            Text('BARÇA ONE',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 23,

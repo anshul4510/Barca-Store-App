@@ -32,9 +32,10 @@ class Trainingad extends StatelessWidget {
                     fontSize: 20,
                   ),),
                 SizedBox(height:15),
-                OutlinedButton(onPressed: (){},
+                OutlinedButton(onPressed:  () async{
+                  dynamic result=await Navigator.pushNamed(context,'/training');},
                     style: OutlinedButton.styleFrom(
-                      backgroundColor:Colors.black,
+                      backgroundColor:Colors.yellow[700],
                     ),
                     child:Padding(
                       padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 15),

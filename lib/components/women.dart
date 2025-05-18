@@ -85,7 +85,6 @@ class _WomenState extends State<Women> {
           ),
         ],
       ),
-      bottomNavigationBar: Navbar(),
     );
   }
 }

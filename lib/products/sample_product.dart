@@ -28,15 +28,6 @@ final List<Product> sampleProducts=[
     type:'women',
   ),
   Product(
-      id:'4',
-      name: 'UCL Men Third Kit Jersey',
-      price:1049.99,
-      image:'UCL_MEN_THIRD.webp',
-      isFav:false,
-      categories: ['men','third','jersey'],
-    type:'men',
-  ),
-  Product(
       id:'5',
       name: 'UCL Men Third Kit Shorts',
       price:549.99,
@@ -70,15 +61,6 @@ final List<Product> sampleProducts=[
       image:'UCL_MEN_HOME_SHORTS.webp',
       isFav:false,
       categories: ['men','home','shorts'],
-    type:'men',
-  ),
-  Product(
-      id:'9',
-      name: 'UCL Men Home Kit Jersey',
-      price:1149.99,
-      image:'UCL_MEN_HOME.webp',
-      isFav:false,
-      categories: ['men','home','jersey'],
     type:'men',
   ),
   Product(

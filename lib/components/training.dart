@@ -85,7 +85,6 @@ class _TrainingState extends State<Training> {
           ),
         ],
       ),
-      bottomNavigationBar: Navbar(),
     );
   }
 }
