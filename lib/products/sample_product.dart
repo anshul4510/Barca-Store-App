@@ -28,7 +28,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['women','jersey','home'],
     type:'women',
-    inCart: true,
+    inCart: false,
   ),
   Product(
       id:'5',
@@ -78,7 +78,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','home','jersey','top'],
     type:'men',
-    inCart: true,
+    inCart: false,
   ),
   Product(
       id:'11',
@@ -138,7 +138,7 @@ final List<Product> sampleProducts=[
       isFav:false,
       categories: ['men','training','pants','home'],
     type:'training',
-    inCart: true,
+    inCart: false,
   ),
   Product(
       id:'18',
