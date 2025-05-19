@@ -36,6 +36,11 @@ class _ToppicksState extends State<Toppicks> {
               onFavoritePressed: () {
                 setState(() {
                   topProducts[index].isFav = !topProducts[index].isFav;
+                },
+                );
+              },
+              onLikeRemoved: (){
+                setState(() {
                 });
               },
             ),

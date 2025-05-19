@@ -4,11 +4,13 @@ class Product_tile extends StatelessWidget {
   final Product prod;
   final VoidCallback? onFavoritePressed;
   final VoidCallback? onAddToCart;
+  final VoidCallback? onLikeRemoved;
   const Product_tile({
     super.key,
     required this.prod,
     this.onFavoritePressed,
-    this.onAddToCart
+    this.onAddToCart,
+    this.onLikeRemoved
   });
   @override
   Widget build(BuildContext context) {
@@ -60,9 +62,13 @@ class Product_tile extends StatelessWidget {
                    fontSize: 13,
                  ),
                ),
-        IconButton(onPressed: onFavoritePressed,
-        // Optional: Call the parent callback if needed
-
+        IconButton(onPressed: (){
+          if (onFavoritePressed != null) {
+          onFavoritePressed!();
+          if (prod.isFav && onLikeRemoved != null) {
+            onLikeRemoved!();
+          }
+        }},
             icon: Icon(prod.isFav
                 ? Icons.favorite
                 : Icons.favorite_border,

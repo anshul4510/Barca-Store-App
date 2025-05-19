@@ -48,6 +48,10 @@ class _LikepicksState extends State<Likepicks> {
                   likedProducts[index].isFav = !likedProducts[index].isFav;
                 });
               },
+                onLikeRemoved:(){
+                  setState(() {
+                  });
+                }
             ),
           );
         },

@@ -3,7 +3,8 @@ import 'package:ecommerce/products/product.dart';
 //TO correct name overflow
 class Carttile extends StatefulWidget {
   final Product prod;
-  const Carttile({super.key, required this.prod});
+  final VoidCallback onRemove;
+  const Carttile({super.key, required this.prod,required this.onRemove});
 
   @override
   State<Carttile> createState() => _CarttileState();
@@ -117,9 +118,14 @@ class _CarttileState extends State<Carttile> {
                         IconButton(
                           icon: Icon(Icons.remove_circle_outline),
                           onPressed: () {
-                            if (count > 1) {
-                              setState(() => count--);
-                            }
+                            setState(() {
+                              if (count == 1) {
+                                widget.prod.inCart = !widget.prod.inCart;
+                                widget.onRemove();
+                              } else {
+                                count--;
+                              }
+                            });
                           },
                         ),
                         Text('$count'),

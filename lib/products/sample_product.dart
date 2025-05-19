@@ -2,7 +2,7 @@ import '../products/product.dart';
 final List<Product> sampleProducts=[
   Product(
     id:'1',
-    name: 'UCL Women Socks',
+    name: 'UCL Women Socks\n',
     price:549.99,
     image:'UCL_WOMEN_SOCKS.webp',
     isFav:false,
@@ -12,7 +12,7 @@ final List<Product> sampleProducts=[
   ),
   Product(
       id:'2',
-      name: 'UCL Women Shorts',
+      name: 'UCL Women Shorts\n',
       price:849.99,
       image:'UCL_WOMEN_SHORTS.webp',
       isFav:false,
